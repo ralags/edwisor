@@ -1,0 +1,185 @@
+
+body {
+  font-family: 'Raleway', serif;
+  line-height: 1.6;
+  background-color: white;
+	margin: 0;
+  min-height: 100vh; 
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+h2,
+h3,
+a {
+	color:white;
+}
+
+a {
+	text-decoration: none;
+}
+
+.logo {
+	margin: 0;
+	font-size: 1.45em;
+}
+
+.main-nav {
+	margin-top: 5px;
+
+}
+.logo a,
+.main-nav a {
+	padding: 10px 15px;
+	text-transform: uppercase;
+	text-align: center;
+	display: block;
+}
+
+.main-nav a {
+	color:black;
+	font-size: .99em;
+}
+
+.header {
+	padding-top: .5em;
+	padding-bottom: .5em;
+
+}
+.container{
+  display: flex;
+  flex-direction: row;
+  border: 1px solid black;
+  align-items:center;
+  width:100%;
+  margin-top:5vh;
+  color: black;
+}
+
+.main{
+  margin: 50px auto;
+  width: 60%;
+  color:white;
+  line-height: 3.5;
+}
+.progressBar{
+  position: relative;
+  width: 100%;
+  height: 40px;
+  background: #eeeeee;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  box-shadow: 0 1px 2px #222;
+}
+.title{
+  position: absolute;
+  width: 100px;
+  height: 40px;
+  padding-left: 10px;
+  float: left;
+  font-weight: bold;
+  color: #fff;
+  line-height: 2.5;
+  z-index: 10000;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  box-shadow: 2px 0 2px #333;
+  text-shadow: 1px 1px 1px #000;
+}
+.progress_value{
+  position: relative;
+  float: right;
+  padding-right: 10px;
+  line-height: 2.5;
+  font-weight: bold;
+  color: #455a64;
+  z-index: 10000;
+}
+.progress{
+  height: 40px;
+  position: absolute;
+  border-radius: 5px;
+  box-shadow: 2px 0 2px #555;
+}
+.htmlColor{
+  background: #9400D3;
+}
+.cssColor{
+  background: #4B0082;
+}
+.jsColor{
+  background:#0000FF;
+}
+.angularjsColor{
+  background: #00FF00;
+}
+.mongocolor{
+  background: #FFFF00;
+}
+.awscolor{
+  background: #FF7F00;
+}
+
+.btn-default{
+  color: black;
+  background-color:solid;
+}
+
+.about{
+  display : flex;
+  flex-direction : row;
+}
+
+.about .about-text{
+  color : white;
+  width : 70%
+}
+
+.about img{
+  width : 30%;
+  height : 30%;
+} 
+
+/* ================================= 
+  Media Queries
+==================================== */
+@media screen and (min-width: 480px) and (max-width: 767px) {
+    .header,
+  .main-nav {
+    display: flex;
+  }
+  .header {
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+    margin: 0 auto;
+    max-width: 800px;
+  }
+}
+
+@media (min-width: 769px) {
+	.header,
+	.main-nav {
+		display: flex;
+	}
+	.header {
+		flex-direction: column;
+		align-items: center;
+		width: 80%;
+		margin: 0 auto;
+		max-width: 1150px;
+	}
+}
+
+
+
+@media (min-width: 1025px) {
+	.header {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+}
